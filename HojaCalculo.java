@@ -5,7 +5,7 @@
  *  En cada fila la empresa "apunta" los ingresos y gastos en 
  *  una determinada fecha
  * 
- * @author -   
+ * @author -   Adrian Vitoria Castillo
  *  
  */
 public class HojaCalculo
@@ -66,8 +66,14 @@ public class HojaCalculo
      * (dependerá de cuántas filas estén a null)
      */
     public int getNumeroFilas() {
+        int num;
+        num = 0;
         
-        return 0;
+        if(fila1 == null) {
+            num++;
+        }
+        
+        return num;
 
     }
 
